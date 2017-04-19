@@ -28,7 +28,8 @@ Checking what's up
 
 `git status` - Lists every file that has changed since the last commit, and files currently staged for commit
 
-`git diff` - Lists every individual change to every file that has changed since the last commit. Add the '--staged' tag to show changes currently staged for committing.
+`git diff` - Lists every individual change to every file that has changed since the last commit. Add the '--staged' tag
+to show changes currently staged for committing.
 
 Committing
 ----
@@ -65,11 +66,15 @@ Commit History
 Branching Out
 ----
 
-`git checkout <branch-name>` - Allows you to switch between git branches, adding the `-b` flag creates the branch you are switching to if it doesn't already exist. You can also specify specific commit hashes instead of branch names.
+`git checkout <branch-name>` - Allows you to switch between git branches, adding the `-b` flag creates the branch you
+are switching to if it doesn't already exist. You can also specify specific commit hashes instead of branch names.
 
-If you want to checkout a specific file you can `git checkout <branch-name-or-commit> <file-path>` which is powerful as it allows you to selectively merge in files or rewind changes.
+If you want to checkout a specific file you can `git checkout <branch-name-or-commit> <file-path>` which is powerful as
+it allows you to selectively merge in files or rewind changes.
 
-`git branch` without any parameters will list all current branches. You can also use it to create a new branch with `git branch <new-branch-name>` which will create a branch based on your current HEAD but not check it out (which is why `git checkout -b <new-branch-name>` is so useful).
+`git branch` without any parameters will list all current branches. You can also use it to create a new branch with
+`git branch <new-branch-name>` which will create a branch based on your current HEAD but not check it out (which is why
+`git checkout -b <new-branch-name>` is so useful).
 
 `git checkout --track <remote-name>/<branch-name>` - Create a new tracking branch based on a remote branch.
 
@@ -82,9 +87,11 @@ If you want to checkout a specific file you can `git checkout <branch-name-or-co
 Phoning Home
 ----
 
-As evidenced by the popularity of remote repo hosting services (hello Github!), One of the most powerful features with git is the ability to track remote repositories.
+As evidenced by the popularity of remote repo hosting services (hello Github!), One of the most powerful features with
+git is the ability to track remote repositories.
 
-`git remote -v` - List all currently configured remotes. The `-v` flag stands for *verbose* and allows you to see more information about the remote repos, like the url.
+`git remote -v` - List all currently configured remotes. The `-v` flag stands for *verbose* and allows you to see more
+information about the remote repos, like the url.
 
 `git remote show <remote-name>` - Show more information about a specific remote.
 
@@ -114,7 +121,8 @@ Dealing with differences and changes between repos is the real power behind git.
 
 `git rebase --abort` - Aborts a rebase in progress.
 
-`git rebase --continue` - A rebase will pause when it detects a conflict and will wait for you to *resolve* it/them by choosing which side of the merge to keep. When you've resolved the conflicts, this command continues the rebase.
+`git rebase --continue` - A rebase will pause when it detects a conflict and will wait for you to *resolve* it/them by
+choosing which side of the merge to keep. When you've resolved the conflicts, this command continues the rebase.
 
 `git mergetool` - Use your configured merge tool to solve conflicts.
 
@@ -146,7 +154,9 @@ Tips and Tricks
 
 ``rm -rf `git ls-files --other --exclude-standard` `` - Remove untracked files (use caution)
 
-`git log -G "<search-string>" --pretty=format:"%C(yellow)%h %Creset%s %Cgreen(%cr) %Cblue[%cn - %ce]" --decorate` - Search commits for a string or code
+`git log -G "<search-string>" --pretty=format:"%C(yellow)%h %Creset%s %Cgreen(%cr) %Cblue[%cn - %ce]" --decorate` -
+Search commits for a string or code
 
 The following snippet is handy if you're dealing with a monolithic repo with many branches and submodules:  
-``git checkout <branch-name> && rm -rf `git ls-files --other --exclude-standard` && git submodule update --init --recursive`` - Reset-checkout.. checks out branch, removes untracked files, and re-inits submodules
+``git checkout <branch-name> && rm -rf `git ls-files --other --exclude-standard` && git submodule update --init --recursive``
+- Reset-checkout.. checks out branch, removes untracked files, and re-inits submodules
