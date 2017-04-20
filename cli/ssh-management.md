@@ -2,6 +2,20 @@ Connect to an instance
 ----
 `ssh <username>@<host>` - Establish an SSH connection to `<host>` with user `<username>`.
 
+Port forwarding (for MySQL etc)
+----
+Often times the best way to connect to a remote database is to use port forwarding. Port forwarding
+allows you to "forward" a remote port to your local machine. In the case of MySQL you want to 
+forward the remote port 3306 to your local machine so that you can use MySQLWorkbench to connect to
+the remote database as though it were a local database. To do this you:
+
+ssh -i <your.pem> -L 3307:localhost:3306 <remote-user>@<remote-host>
+
+In the example above you have forwarded the remote port 3306 to your local port 3307. Now you can connect
+to your remote database using Workbench and you can connect using the connection URL:
+
+127.0.0.1:3307
+
 Connect to an AWS instance
 ----
 `ssh -i ~/.ssh/<yourfile.pem> <username>@<host>` - Establish an SSH connection to `<host>` with user `<username>`.
