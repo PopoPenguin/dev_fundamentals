@@ -193,3 +193,6 @@ cat .ssh/KEY_FILE.pub | ssh USER@SERVER ‘cat >> .ssh/authorized_keys’
 
 You are now all set with multiple unique keys per machine you are connecting into, complete with verification of the key
 on the server side of things.
+
+Test
+---
