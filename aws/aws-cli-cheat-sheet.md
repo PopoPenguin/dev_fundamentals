@@ -1,4 +1,4 @@
-page courtesy of: https://github.com/toddm92/aws/wiki/AWS-CLI-Cheat-Sheet
+Courtesy of: https://github.com/toddm92/aws/wiki/AWS-CLI-Cheat-Sheet
 
 ### S3
 

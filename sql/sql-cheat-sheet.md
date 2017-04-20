@@ -1,4 +1,4 @@
-Wonderful cheat sheet courtesy of http://illegalbyte.github.io/SQL
+Courtesy of http://illegalbyte.github.io/SQL
 
 Create Table
 ----

@@ -1,4 +1,4 @@
-# Java CheatSheet (courtesy of: http://egek.us/JavaCheatSheet/)
+Courtesy of: http://egek.us/JavaCheatSheet/)
 
 1. [the basics](https://github.com/egek92/JavaCheatSheet#the-basics)
 2. [string manipulation](https://github.com/egek92/JavaCheatSheet#string-manupilation)
@@ -661,14 +661,14 @@ StringBuffer buffer = new StringBuffer();
 #### contacting a server:
 
 	String serverName = "www.egek.us";
-        Socket socket = new Socket(serverName, 80);
-        System.out.println(socket);
+    Socket socket = new Socket(serverName, 80);
+    System.out.println(socket);
 	
 #### handling network errors:
 
 	try {
-            	Socket sock = new Socket(server_name, tcp_port);
-            	System.out.println("Connected to " + server_name);
+            Socket sock = new Socket(server_name, tcp_port);
+            System.out.println("Connected to " + server_name);
          	sock.close(  );
 
         } catch (UnknownHostException e) {

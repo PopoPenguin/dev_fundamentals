@@ -1,3 +1,5 @@
+Courtesy of WebDevStudios
+
 Basic Commands
 ====
 

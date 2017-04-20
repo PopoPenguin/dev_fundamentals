@@ -1,3 +1,5 @@
+Courtesy of WebDevStudios
+
 Connect to an instance
 ----
 `ssh <username>@<host>` - Establish an SSH connection to `<host>` with user `<username>`.
