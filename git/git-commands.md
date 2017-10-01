@@ -9,13 +9,13 @@ Much credit for this file goes to the [incredible resource provided by Tower](ht
 Quick start
 ----
 
-`git pull --rebase`
+`git pull `
 
-`git add .`
+`git add `
 
 `git commit -m "commit message"`
 
-`git push`
+`git push <remote> <branch>`
 
 
 Let's get started
@@ -53,6 +53,14 @@ Committing
 
 
 `git commit --amend` - Change the last commit. *Don‘t amend published commits!!*
+
+Ignore Unwanted Files
+----
+Create a ".gitignore" file that lists the files and directories that you do not want to track in git. Examples of these files include:
+* *.iml
+*.idea
+*out/
+*target
 
 Commit History
 ----
