@@ -57,13 +57,14 @@ Committing
 Ignore Unwanted Files
 ----
 Create a ".gitignore" file that lists the files and directories that you do not want to track in git. Examples of these files include:
-* *.iml
+* *.iml (local IntelliJ config file)
 
-* .idea
+* .idea (local IntelliJ config files)
 
-* out/
+* out/ (compiled files - you never need/want to track compiled files as you can recompile a java file at any time)
 
-* target
+* target/ (compiled files - you never need/want to track compiled files as you can recompile a java file at any time)
+
 
 Commit History
 ----
