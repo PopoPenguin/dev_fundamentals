@@ -58,9 +58,12 @@ Ignore Unwanted Files
 ----
 Create a ".gitignore" file that lists the files and directories that you do not want to track in git. Examples of these files include:
 * *.iml
-*.idea
-*out/
-*target
+
+* .idea
+
+* out/
+
+* target
 
 Commit History
 ----
